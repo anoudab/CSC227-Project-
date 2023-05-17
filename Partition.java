@@ -14,20 +14,20 @@ public Partition()
 
 }
 
-public void Allocate(String stratgy,String pName, int pSize)
+public void Allocate(String stratgy,String pId, int pSize)
 {
     switch (stratgy.toLowerCase().charAt(0)) {
-        case 'b':
-            BestFit(pName, pSize);
+       
+        case 'f':
+            FirstFit(pId, pSize);
+            break; case 'b':
+            BestFit(pId, pSize);
             break;
     
         case 'w':
-            WorstFit(pName, pSize);
+            WorstFit(pId, pSize);
             break;
 
-        case 'f':
-            FirstFit(pName, pSize);
-            break;
         default:
             System.out.println("Invalid stratgy");
         }
