@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Partition
 {
 PartitionObject[] partition;
-int partitionSize=0;
+int partitionSize;
 String stratgy;
-int startingAddress;
+int startingAddress=0;
 int endingAddress;
 int internalFrag;
 
