@@ -1,10 +1,12 @@
 public class PartitionObject {
+    private int processId;
     private int partitionSize;
     private boolean partitionStatus;
     private int startingAddress;
     private int endingAddress;
 
     public PartitionObject(int size, int starting){
+        processId = 0;
         partitionSize = size;
         partitionStatus = false;
         startingAddress = starting;
@@ -13,9 +15,6 @@ public class PartitionObject {
 
     public int getPartitionSize() {
         return partitionSize;
-    }
-    public void setPartitionSize(int partitionSize) {
-        this.partitionSize = partitionSize;
     }
     public boolean isPartitionStatus() {
         return partitionStatus;
@@ -26,13 +25,13 @@ public class PartitionObject {
     public int getStartingAddress() {
         return startingAddress;
     }
-    public void setStartingAddress(int startingAddress) {
-        this.startingAddress = startingAddress;
-    }
     public int getEndingAddress() {
         return endingAddress;
     }
-    public void setEndingAddress(int endingAddress) {
-        this.endingAddress = endingAddress;
+    public int getProcessId() {
+        return processId;
+    }
+    public void setProcessId(int processId) {
+        this.processId = processId;
     }
 }
