@@ -1,11 +1,9 @@
 public class Partition
 {
 
-String partitionStatus;
 int partitionSize;
 int startingAddress;
 int endingAddress;
-String processId;
 int internalFrag;
 
 
