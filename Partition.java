@@ -1,4 +1,4 @@
-import java.util.InputMismatchException;
+https://github.com/anoudab/CSC227-Project-/blob/main/Partition.javaimport java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Partition
@@ -72,7 +72,18 @@ public void Report()
 
 public void WorstFit(String id,int size)
 {
-
+int worst=-1;
+for(int i=0;i<partition.length;i++){
+    if(partition[i].isPartitionStatus()==true && partition[i].getPartitionSize()>size){
+         if(worst==-1)
+            worst=i;
+         else if(partition[i].getPartitionSize()>partition[worst].getPartitionSize())
+              worst=i;}}
+      if(worst!=-1){
+        partition[worst].allocate(id,size);
+        System.out.println("done allocate");}
+      else
+       System.out.println("can not allocate"); 
 }
 
 public void BestFit(String id,int size)
