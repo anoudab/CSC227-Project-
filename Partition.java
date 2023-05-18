@@ -67,7 +67,14 @@ boolean isfound = false;
 
 public void Report()
 {
-
+for(int i=0;i<partition.length;i++){
+   if(partition[i].isPartitionStatus()==false)
+      System.out.println("size of partition is: "+partition[i].getPartitionSize()+" patition status is: Allocate "+" process Number is: "+partition[i].getProcessId()+" Starting Adddres: "+partition[i].getStartingAddress()+" Ending Adddres: "+partition[i].getEndingAddress()+" InternalFragmentation is: "+(partition[i].getPartitionSize()-partition[i].getProcessSize()) );
+   else
+    System.out.println("size of partition is: "+partition[i].getPartitionSize()+" patition status is: Free "+" process Number is: Null "+" Starting Adddres: "+partition[i].getStartingAddress()+" Ending Adddres: "+partition[i].getEndingAddress()+" InternalFragmentation is: -1");
+    
+}
+ 
 }
 
 public void WorstFit(String id,int size)
