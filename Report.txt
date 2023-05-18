@@ -1,0 +1,6 @@
+----------------------------Report for the memory:----------------------------Partition 1: The Size of partition is: 1
+ The partition status is: Allocate 
+ The process number is: 1
+ The starting adddres is: 1
+ The ending adddres: 2
+ The internal fragmentation is: 0

@@ -1,4 +1,4 @@
-https://github.com/anoudab/CSC227-Project-/blob/main/Partition.javaimport java.util.InputMismatchException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Partition
@@ -58,7 +58,7 @@ boolean isfound = false;
 				partition[i].setPartitionStatus(false);
 				partition[i].setProcessId(null);
 				isfound = true;
-				partition[i].setpartitionSize(-1);
+				//partition[i].setpartitionSize(-1);
 			}
 		}
 
@@ -97,26 +97,33 @@ public void BestFit(String id,int size)
 {
 int BigEnough = -1;
 int MemorySearch = partition.length;
+System.out.println("54534535347");
 
 for (int i = 0 ; i < MemorySearch ; i++)//Search the smallest hole is big enough 
  {
-	if (size <= partition[i].isPartitionStatus()==true && partition[i].getPartitionSize()) 
+    System.out.println("5667");
+	if (partition[i].isPartitionStatus()==true && size <= partition[i].getPartitionSize()) 
         {
-           if(BigEnough == -1) //for first process to compare between other proceses to find smallest hole
-             BigEnough = i;
-           else if(partition[i].getPartitionSize() < partition[BigEnough].getPartitionSize())
-	     BigEnough = i;
+            System.out.println("0");
+           if(BigEnough == -1){
+            System.out.println("1"); //for first process to compare between other proceses to find smallest hole
+             BigEnough = i;}
+           else if(partition[i].getPartitionSize() < partition[BigEnough].getPartitionSize()){
+            System.out.println("2");
+	     BigEnough = i;}
 	 }
    }
+   System.out.println("3");
 
  if (BigEnough != -1){
  partition[BigEnough].allocate(id,size);
  System.out.println("done allocate");
    }
- else
+ else{
  System.out.println("Can not allocate");
 }
-
+System.out.println("4");
+}
 public void FirstFit(String id,int size)
 {
 for (PartitionObject partitionObject : partition) {
