@@ -95,7 +95,26 @@ for(int i=0;i<partition.length;i++){
 
 public void BestFit(String id,int size)
 {
+int BigEnough = -1;
+int MemorySearch = partition.length;
 
+for (int i = 0 ; i < MemorySearch ; i++)//Search the smallest hole is big enough 
+ {
+	if (size <= partition[i].isPartitionStatus()==true && partition[i].getPartitionSize()) 
+        {
+           if(BigEnough == -1) //for first process to compare between other proceses to find smallest hole
+             BigEnough = i;
+           else if(partition[i].getPartitionSize() < partition[BigEnough].getPartitionSize())
+	     BigEnough = i;
+	 }
+   }
+
+ if (BigEnough != -1){
+ partition[BigEnough].allocate(id,size);
+ System.out.println("done allocate");
+   }
+ else
+ System.out.println("Can not allocate");
 }
 
 public void FirstFit(String id,int size)
