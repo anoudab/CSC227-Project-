@@ -55,7 +55,7 @@ public void Deallocate(String id)
 boolean isfound = false;
 		for (int i = 0; i < partition.length; i++) {
 			if (partition[i].getProcessId().equals(id)) {
-				partition[i].setPartitionStatus(false);
+				partition[i].setPartitionStatus(true);
 				partition[i].setProcessId(null);
 				isfound = true;
 				//partition[i].setpartitionSize(-1);
