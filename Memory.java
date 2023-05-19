@@ -32,11 +32,11 @@ public class Memory
                 System.out.print("Enter the number of partitions for the memory: ");
                 m = scan.nextInt();
                  if(m < 0)
-                 System.out.print("Please enter a positive number: ");
+                 System.out.println("Please enter a positive number ");
                    else 
                    flag = true;
                   } catch(InputMismatchException e) {
-                    System.out.print("Please enter a valid number: ");
+                    System.out.println("Please enter a valid number ");
                     scan.nextLine();
                     }
               }
@@ -61,11 +61,11 @@ public class Memory
              System.out.print("Size of partition " + (i+1) + ": ");
              size = scan.nextInt();
                 if( size < 0 )
-                System.out.print("Please enter a positive number: ");
+                System.out.println("Please enter a positive number ");
                    else
                    flag = true;
                     } catch( InputMismatchException e) {
- 				          System.out.print("Please enter a valid number: ");
+ 				          System.out.println("Please enter a valid number ");
 				          scan.nextLine();
                       }
              partition[i] = new PartitionObject(size, startingAddress); 
@@ -276,7 +276,7 @@ for(int i=0;i<partition.length;i++){
         partition[worst].allocate(id,size);
         System.out.println("Allocated successfully!");}
       else
-       System.out.println("Error: Caould not allocate."); 
+       System.out.println("Error: Could not allocate."); 
 }
 
 
