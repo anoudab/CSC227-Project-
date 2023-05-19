@@ -98,17 +98,21 @@ public class Memory
    int input = 0;
    
    //Menu implementation
-   do
+  do
    {
-   
       System.out.println("Choose '1' to allocate a process / Choose '2' to deallocate a process / Choose '3' to print a report / Choose '4' to exit the program.");
-      System.out.print("Enter your choice: ");
-        try{
-        input = scan.nextInt();
-          } catch(InputMismatchException e) {
-            System.out.println("Please enter a valid number.");
-            scan.nextLine();
-            }
+        flag = false;
+        while(!flag)
+        {
+         try{
+         System.out.print("Enter your choice: ");
+         input = scan.nextInt();
+         flag = true;
+           } catch(InputMismatchException e) {
+             System.out.println("Please enter a valid number.");
+             scan.nextLine();
+             }
+           }
 
         switch(input)
          {
