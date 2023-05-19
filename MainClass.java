@@ -52,13 +52,14 @@ public class MainClass
    System.out.println("--------------------------------------------------------------");
 
    System.out.println("You can now manage your memory!");
-   System.out.println("Choose '1' to allocate a process / Choose '2' to deallocate a process / Choose '3' to print a report / Choose '4' to exit the program.");
+   
 
    int input = 0;
 
    do
    {
-
+   
+      System.out.println("Choose '1' to allocate a process / Choose '2' to deallocate a process / Choose '3' to print a report / Choose '4' to exit the program.");
       System.out.print("Enter your choice: ");
       input = scan.nextInt();
 
