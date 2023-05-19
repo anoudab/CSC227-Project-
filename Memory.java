@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.FileWriter;
 
 
-public class Partition
+public class Memory
 {
    static PartitionObject[] partition;
    static String memoryApproach;
