@@ -7,7 +7,7 @@ public class PartitionObject {
     private int endingAddress;
 
     public PartitionObject(int size, int starting){
-        processId = null;
+        processId = "Null";
         processSize = 0;
         partitionSize = size;
         partitionStatus = true;
