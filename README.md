@@ -19,7 +19,7 @@ This project is for our CSC227: Operating Systems course. The goal of this proje
 -	The program will prompt the user to enter the size of each partition, respectively.
 -	The program will prompt the user to choose a memory allocation approach from the three listed.
 -	A menu will pop up showcasing 4 options.
--	If “1 – Allocate a process” is chosen, the user is prompted to enter the Process ID and the size in KBs of the process that will be allocated.
+-	If “1 – Allocate a process” is chosen, the user is prompted to enter the Process ID and the size in KBs of the process that will be allocated. The program will also display the memory state after allocation, which shows the allocated processes and the available partitions.
 -	If “2 – Deallocate a process” is chosen, the user is prompted to enter the Process ID of the process that will be deallocated.
 -	If ”3 – Print a report” is chosen, the program will display on the console the status of the memory with the following information about each partition in the memory:
                - The size of partition in KBs.
