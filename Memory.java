@@ -299,7 +299,7 @@ public static void Report() throws IOException {
 
     for(int j=0;j<partition.length;j++){
       writer.write("Partition " + (j+1) + ":\n");
-        if(partition[i].isPartitionStatus()==false){
+        if(partition[j].isPartitionStatus()==false){
         writer.write(" The Size of partition is: " + partition[j].getPartitionSize() + "\n The partition status is: Allocate " + "\n The process number is: " + partition[j].getProcessId() + "\n The starting adddres is: "+ partition[j].getStartingAddress() + "\n The ending adddres: " + partition[j].getEndingAddress() + "\n The internal fragmentation is: " + (partition[j].getPartitionSize()-partition[j].getProcessSize()) + "\n"); 
 		  }
          else
