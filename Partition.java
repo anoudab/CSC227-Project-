@@ -6,7 +6,7 @@ import java.io.FileWriter;
 
 
 public class Partition
-
+{
    static PartitionObject[] partition;
    static String memoryApproach;
 
