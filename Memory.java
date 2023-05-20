@@ -267,7 +267,7 @@ public static void WorstFit(String id,int size)
 {
 int worst=-1;
 for(int i=0;i<partition.length;i++){
-    if(partition[i].isPartitionStatus()==true && partition[i].getPartitionSize()>size){
+    if(partition[i].isPartitionStatus()==true && partition[i].getPartitionSize()>=size){
          if(worst==-1)
             worst=i;
          else if(partition[i].getPartitionSize()>partition[worst].getPartitionSize())
